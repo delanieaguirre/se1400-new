@@ -150,24 +150,34 @@ main {
     clear: both;
     grid-row: 5 / 6;
     grid-column: 2 / -2;
-    background-color: rgb(255, 68, 0);
+    background-color: rgb(0, 0, 0);
     color: white;
+    padding-left: 20px;
 }
 .drumtext {
     flex: 1;
     min-width: 200px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .drumpic {
     flex: none;
+    
 }
 .drumpic img {
     width: 400px;
     height: auto;
     max-width: 100%;
     display: block;
+    box-sizing: border-box;
+    border: 10px solid black;
+    margin: 20px;
 }
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 68, 0);
     height: 100px;
     grid-row: 6 / 7;
     grid-column: 2 / -2;
