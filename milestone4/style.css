@@ -5,11 +5,11 @@
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.75);
     height: 50px;
     grid-row: 1 / 2;
     grid-column: 2 / -2;
-
+    z-index: 9;
 }
 
 header a {
@@ -20,14 +20,12 @@ header a {
     font-style: normal;
     font-size: smaller;
 }
-
-nav {
-    /* This was touching the top of the page */
+nav {     /* This was touching the top of the page */
     height: 70px;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
     padding-top: 3rem;
-
+    z-index: 10;
 }
 
 nav a {
@@ -37,7 +35,9 @@ nav a {
     font-weight: 700;
     font-style: normal;
 }
-
+nav a:hover {
+    color: rgb(255, 85, 0);
+}
 .navthing {
     display: flex;
     align-items: center;
@@ -64,8 +64,23 @@ nav a {
     background-position: center;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
+    margin-top: -70px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
 }
-
+.herobutton {
+    background-color: rgb(255, 68, 0);
+    text-decoration: none;
+    color: white;
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 15px;;
+    margin-top: -90px;
+}
 #hero h2 {
     color: white;
     font-family: area-extended, sans-serif;
@@ -82,24 +97,48 @@ main {
     grid-row: 4 / 5;
     grid-column: 2 / -2;
 }
-
 .main-container {
     display: flex;
     color: WHITE;
-
+    justify-content: center;
+     align-content: center;
 }
-
 .flexitem {
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 10rem;
+    height: 25rem;
     margin: 1rem;
     width: auto;
+    padding: 5px 15px;
 }
-
+.flexitem img {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: -100px;
+}
+.flexitem a {
+    margin-bottom: -100px;
+}
+.flexitem a:hover {
+    background-color: rgb(255, 94, 0);
+}
+.flexitem p {
+    padding-bottom: 100px;
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.flexitem h3 {
+    font-family: area-extended, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: -10px;
+}
 footer {
     background-color: rgb(0, 0, 0);
     height: 100px;
