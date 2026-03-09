@@ -75,6 +75,9 @@ nav a:hover {
     align-items: center;
     flex-direction: column
 }
+#hero a:hover {
+    background-color: rgb(255, 94, 0);
+}
 .herobutton {
     background-color: rgb(255, 68, 0);
     text-decoration: none;
