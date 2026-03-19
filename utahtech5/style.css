@@ -111,12 +111,12 @@ footer {
     grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 header {
-    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     grid-column: 2 / -2;
 
 }
 nav {
-    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     grid-column: 2 / -2;
 }
 #homehero, #studenthero, #facultyhero {
@@ -164,7 +164,7 @@ footer {
     background-position: center;
 }
 @media only screen and (max-width: 1100px) {
-    wrapper {
+    #wrapper {
         grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
     }
 }
@@ -193,12 +193,12 @@ footer {
     header h1 {
         background-image: none;
         text-align: center;
-        nav {
+    }
+    nav {
             grid-row: 2 / 3;
-            grid-column: 1 / 9;
-        }
+            grid-column: 1 / -1;
+    }
     #homehero, #studenthero, #facultyhero {
         display: none;
     }
     }
-}
