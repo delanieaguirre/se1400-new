@@ -210,9 +210,19 @@ footer {
         display: none;
     }
     .flexitem {
-        height: 24rem;
+        height: 17rem;
     }
     header a {
         font-size: 1.1rem;
+    }
+    .flexitem p, .flexitem h3 {
+        margin-top: -140px;
+        padding-bottom: 157px;
+    }
+    .herobutton {
+        margin-top: -160px;
+    }
+    .main-container {
+        flex-direction: column;
     }
 }

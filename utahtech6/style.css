@@ -234,4 +234,8 @@ label {
     #homehero, #studenthero, #facultyhero, #alumnihero {
         display: none;
     }
+    .flexitem {
+        display: flex;
+        height: 10px;
+    }
     }
