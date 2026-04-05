@@ -205,9 +205,6 @@ footer {
         background-color: black;
         z-index: 999999999999999999999999;
     }
-    .flexitem {
-       
-    }
     main {
         height: auto;
         min-height: 450px;
@@ -243,8 +240,8 @@ footer {
     }
     #hero {
         grid-row: 2 / 3;
-        grid-column: 4 / -2; /* RIGHT SIDE */
-        margin-top: 0; /* VERY IMPORTANT */
+        grid-column: 4 / -2; 
+        margin-top: 0; 
         height: auto;
         position: static;
     }
