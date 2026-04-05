@@ -1,6 +1,7 @@
 #wrapper {
     display: grid;
     grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 
 header {
@@ -8,7 +9,7 @@ header {
     height: 50px;
     grid-row: 1 / 2;
     grid-column: 2 / -2;
-    z-index: 9;
+    z-index: 1000;
 }
 body {
     background-image: linear-gradient(to bottom, rgb(255, 94, 0), #ff3c00, rgb(0, 0, 0));
@@ -28,14 +29,16 @@ nav {     /* This was touching the top of the page */
     grid-column: 2 / -2;
     padding-top: 3rem;
     z-index: 10;
+    position: relative;
+    left: 90px;
 }
-
 nav a {
     text-decoration: none;
     color: white;
     font-family: area-extended, sans-serif;
     font-weight: 700;
     font-style: normal;
+    
 }
 nav a:hover {
     color: rgb(255, 85, 0);
@@ -64,10 +67,10 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    grid-row: 3 / 4;
+    grid-row: 1 / 4;
     grid-column: 2 / -2;
-    margin-top: -70px;
-    z-index: 1;
+    margin-top: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +101,7 @@ nav a:hover {
 
 main {
     background-color: rgb(255, 68, 0);
-    height: 450px;
+    height: auto;
     grid-row: 4 / 5;
     grid-column: 2 / -2;
 }
@@ -117,8 +120,9 @@ main {
     align-content: center;
     height: 25rem;
     margin: 1rem;
-    width: auto;
+    width: 250px; /* this was auto before */
     padding: 0px 15px;
+    max-width: 19rem;
 }
 .flexitem img {
     width: 250px;
@@ -144,6 +148,12 @@ main {
     font-weight: 700;
     font-style: normal;
     margin-bottom: -10px;
+}
+#experiencebox img {
+    margin-top: -100px;
+}
+#experiencebox a {
+    margin-top: -110px;
 }
 .drumcontainer {
     display: flex;
@@ -187,13 +197,107 @@ footer {
     grid-row: 6 / 7;
     grid-column: 2 / -2;
 }
-@media only screen and (max-width: 992px) {
-    
+.sidenav {
+    display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 970px) {
+    header {
+        background-color: black;
+        z-index: 999999999999999999999999;
+    }
+    .flexitem {
+       
+    }
+    main {
+        height: auto;
+        min-height: 450px;
+        padding: 1rem;
+    }
+    nav {
+         grid-row: 2 / 3;
+        grid-column: 2 / 4; /* LEFT SIDE */
+        padding-top: 0;
+        height: auto;
+        position: static;
+    }
+    nav a:hover {
+        color: white;
+    }
+    nav ul {
+        flex-flow: column nowrap;
+    
+    }
+    .navthing {
+        justify-content: center;
+        grid-column: 2 / -2;
+    }
+    .navthing li {
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(14, 13, 13);
+        
+    }
+    .navthing ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    #hero {
+        grid-row: 2 / 3;
+        grid-column: 4 / -2; /* RIGHT SIDE */
+        margin-top: 0; /* VERY IMPORTANT */
+        height: auto;
+        position: static;
+    }
+    #hero A { /*button that was in the hero */
+        display: none;
+    }
+     .sidenav {
+        display: block;
+        grid-row: 2 / 3;
+        grid-column: 2 / 4;
+        height: 100%;
+    }
+    .sidenav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .sidenav li {
+        padding: 30px;
+        background-color: rgb(14, 13, 13);
+        text-align: center;
+    }
+    .sidenav li:hover {
+        background-color: rgb(63, 63, 63);
+    }
+    .topnav {
+        display: none;
+    }
+    .flexitem {
+        flex: 1 1 250px; 
+        min-width: 200px;
+        padding: 1rem;
+        margin: 0;
+    }
+    .main-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 1rem; 
+        align-items: stretch;
+    }
+    .drumcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 652px) {
     main {
         background-attachment: fixed;
         background-image: linear-gradient(to bottom, rgb(0, 0, 0), #ff3c00);
+        height: 1000px;
         
     }
     header {
@@ -210,7 +314,11 @@ footer {
         display: none;
     }
     .flexitem {
-        height: 17rem;
+        min-height: 14rem;
+        width: auto;
+        max-width: 70%;
+        min-width: 90%;
+        
     }
     header a {
         font-size: 1.1rem;
@@ -225,4 +333,11 @@ footer {
     .main-container {
         flex-direction: column;
     }
+    #skillsbox {
+        margin-top: 21px;
+    }
+    .sidenav {
+        grid-column: 2 / 10;
+    }
+    
 }
