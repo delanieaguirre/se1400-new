@@ -104,11 +104,12 @@ main {
     height: auto;
     grid-row: 4 / 5;
     grid-column: 2 / -2;
+    margin-left: 39px;
+    margin-right: 39px;
 }
 .main-container {
     display: flex;
     color: WHITE;
-    justify-content: center;
      align-content: center;
      align-items: flex-start;
 }
@@ -168,6 +169,8 @@ main {
     background-color: rgb(0, 0, 0);
     color: white;
     padding-left: 30px;
+    margin-left: 39px;
+    margin-right: 39px;
 }
 .drumtext {
     flex: 1;
@@ -196,6 +199,8 @@ footer {
     height: 100px;
     grid-row: 6 / 7;
     grid-column: 2 / -2;
+    margin-left: 39px;
+    margin-right: 39px;
 }
 .sidenav {
     display: none;
