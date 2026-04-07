@@ -12,7 +12,7 @@ header {
     z-index: 1000;
 }
 body {
-    background-image: linear-gradient(to bottom, rgb(255, 94, 0), #ff3c00, rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(255, 94, 0),  #9c2400, rgb(0, 0, 0));
     background-attachment: fixed;
 }
 header a {
