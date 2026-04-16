@@ -203,7 +203,7 @@ input, textarea {
 }
 input:focus, textarea:focus {
     outline: none;
-    background-color: #f0f0f0;
+    background-color: #6e6767;
 }
 label {
     padding: 10px;
