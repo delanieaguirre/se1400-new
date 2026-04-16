@@ -172,6 +172,14 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
 }
+#shoppingcart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+}
 main img {
     width: 300px;
     background-size: cover;
@@ -259,6 +267,9 @@ video {
         width: 100%;
         height: auto;
     }
+    #shoppingcart {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media only screen and (max-width: 600px) {
     header h1 {
@@ -271,5 +282,8 @@ video {
     }
     #homehero, #studenthero, #facultyhero, #alumnihero, #shophero {
         display: none;
+    }
+    #shoppingcart {
+        grid-template-columns: 1fr;
     }
     }
