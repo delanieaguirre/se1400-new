@@ -343,8 +343,12 @@ input, textarea {
         width: auto;
     }
     .drumcontainer {
-        flex-direction: column;
-        align-items: center;
+       display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 1rem; 
+        align-items: stretch;
+        width: auto;
     }
 }
 @media only screen and (max-width: 652px) {
@@ -393,5 +397,17 @@ input, textarea {
     .sidenav {
         grid-column: 2 / 10;
     }
-    
+    .drumcontainer {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+
+    }
+     .drumtext {
+        padding: 0;
+    }
+     .drumpic img {
+        width: 100%;
+        height: auto;
+    }
 }
