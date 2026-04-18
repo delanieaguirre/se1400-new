@@ -428,9 +428,6 @@ input, textarea {
      width: auto;
         
     }
-    form {
-        
-    }
 }
 @media only screen and (max-width: 652px) {
     main {
