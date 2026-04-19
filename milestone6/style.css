@@ -343,13 +343,14 @@ table {
     font-style: normal;
     color: rgb(0, 0, 0);
     flex-flow: column nowrap;
-    
+    margin-left: 100px;
 }
 table thead td {
     font-weight: 000;
     background-color: rgb(0, 0, 0);
     color: white;
-   margin-left: 100px;
+   margin-left: 50px;
+   margin-right: 200x;
 }
 .experiencebox {
     display: flex;
@@ -365,6 +366,7 @@ table thead td {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: auto;
 }
 @media only screen and (max-width: 970px) {
     header {
