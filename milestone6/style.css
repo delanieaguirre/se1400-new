@@ -320,6 +320,20 @@ input, textarea {
     height: 2rem;
     max-width: 1000px;
 }
+.gallerycontainer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    align-items: stretch;
+    width: 1050px;
+    height: auto;
+    align-self: center;
+    margin: auto;
+}
+.gallerycontainer img {
+    height: 300px;
+    margin-top: 10px;
+}
 @media only screen and (max-width: 970px) {
     header {
         background-color: black;
