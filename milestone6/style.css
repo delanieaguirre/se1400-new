@@ -154,7 +154,7 @@ main {
     font-style: normal;
     margin-bottom: -10px;
 }
-#experiencebox img {
+#experiencebox  {
     margin-top: -100px;
 }
 #experiencebox a {
@@ -341,33 +341,46 @@ table {
     font-family: "area-normal-light", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     flex-flow: column nowrap;
-    margin-left: 100px;
+    background-color: black;
+    
+    
 }
 table thead td {
     font-weight: 000;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 60, 0);
    margin-left: 50px;
    margin-right: 200x;
+   background-color: black;
+   padding-left: 70px;
 }
-.experiencebox {
+.experienceboxx {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     background-color: black;
+    margin: auto;
+    width: 950px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .skillscontainer {
-    background-color: rgb(255, 72, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 980px;
+    align-self: center;
     padding: auto;
+    margin: auto;
+    background-color: black;
+    padding-left: 70px;
+    font-size: 24px;
 }
+
 @media only screen and (max-width: 970px) {
     header {
         background-color: black;
@@ -476,6 +489,16 @@ table thead td {
      width: auto;
         
     }
+    table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  .skillscontainer table {
+    margin-left: px;
+    font-size: 25px;
+  }
+  .skillscontainer table thead {
+    display: none;
+  }
 }
 @media only screen and (max-width: 652px) {
     main {
@@ -542,4 +565,26 @@ table thead td {
     #footer-location, #footer-name {
         display: none;
     }
+    .skillscontainer, table {
+        word-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        margin-top: -250px;
+        margin-bottom: -250px;
+        flex-wrap: wrap;
+        display: flex;
+        
+    }
+    .skillscontainer {
+        background-image: none;
+        margin-right: -200px;
+        min-height: 1400px;
+    }
+    table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  .experienceboxx {
+    background-image: none;
+    width: 500px;
+  }
 }
