@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: rgb(0, 0, 0, 0.75);
+    background-color: rgb(0, 0, 0, 0.5);
     height: 50px;
     grid-row: 1 / 2;
     grid-column: 2 / -2;
@@ -89,7 +89,7 @@ nav a:hover {
     padding: 10px 15px;;
     margin-top: -90px;
 }
-#hero h2 {
+#hero h2, #galleryhero h2, #skillshero h2, #experiencehero h2, #contacthero h2 {
     color: white;
     font-family: area-extended, sans-serif;
     font-weight: 1000;
@@ -377,7 +377,36 @@ table thead td {
     padding-left: 70px;
     font-size: 24px;
 }
+#galleryhero {
+    background-image: url("images/milad-fakurian-ICTjWYzpoc0-unsplash.jpg");
+    max-height: 400px;
+}
+#skillshero {
+        background-image: url("images/steve-a-johnson-2gK8CM-bIFk-unsplash.jpg");
+        max-height: 400px;
+}
+#experiencehero {
+    background-image: url("images/sufyan-Kr6QMTQ1QTw-unsplash.jpg");
+    max-height: 400px;
 
+}
+#contacthero {
+    background-image: url("images/milad-fakurian-cDx0WomlLGE-unsplash.jpg");
+}
+#galleryhero, #skillshero, #experiencehero, #contacthero {
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 1 / 4;
+    grid-column: 2 / -2;
+    margin-top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
 @media only screen and (max-width: 970px) {
     header {
         background-color: black;
@@ -416,7 +445,7 @@ table thead td {
         flex-direction: column;
         width: 100%;
     }
-    #hero {
+    #hero, #galleryhero, #skillshero, #contacthero, #experiencehero {
         grid-row: 2 / 3;
         grid-column: 4 / -2; 
         margin-top: 0; 
@@ -502,6 +531,9 @@ table thead td {
     height: auto;
     
   }
+  #experiencehero, #skillshero {
+    min-height: 433px;
+  }
 }
 @media only screen and (max-width: 652px) {
     main {
@@ -513,7 +545,7 @@ table thead td {
     header {
         background-color: rgb(0, 0, 0);
     }
-    #hero {
+    #hero, #experiencehero, #galleryhero, #skillshero, #contacthero {
         display: none;
     }
     nav ul {
