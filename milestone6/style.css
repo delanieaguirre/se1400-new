@@ -154,9 +154,6 @@ main {
     font-style: normal;
     margin-bottom: -10px;
 }
-#experiencebox  {
-    margin-top: -100px;
-}
 #experiencebox a {
     margin-top: -110px;
 }
@@ -498,6 +495,12 @@ table thead td {
   }
   .skillscontainer table thead {
     display: none;
+  }
+  .gallerycontainer {
+    display: flex;
+    width: auto;
+    height: auto;
+    
   }
 }
 @media only screen and (max-width: 652px) {
